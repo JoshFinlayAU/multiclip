@@ -10,6 +10,7 @@ each other over Bonjour and offer their copies to one another.
   (`_multiclip._tcp`). There is no central server. To avoid a dual-connection
   race, the peer with the lexicographically smaller device id dials out; the
   other accepts — exactly one encrypted channel per pair.
+- **Does not rely on the same Apple ID** (the whole reason I built it)
 - **Encrypted & key-gated.** All traffic is AES-GCM encrypted with a key derived
   (HKDF-SHA256) from a shared secret you set. A device with the wrong/empty key
   cannot decrypt a single frame, so it simply can't join.
