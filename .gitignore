@@ -1,0 +1,13 @@
+.DS_Store
+.build/
+build/
+dist/
+*.xcodeproj
+.swiftpm/
+
+# Secrets — never commit
+AuthKey_*.p8
+*.p12
+*.cer
+*.provisionprofile
+notary.env
